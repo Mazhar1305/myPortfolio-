@@ -7,7 +7,6 @@
 
 body {
   font-family: Montserrat, sans-serif;
-  background: #d5ebeb;
 }
 
 /* Navbar */
@@ -15,7 +14,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #66BFBF;
+  background-color: #66bfbf;
   padding: 12px 20px;
   position: relative;
   position: sticky;
@@ -25,7 +24,7 @@ nav {
 
 .logo a {
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 24px;
   font-weight: bold;
 }
@@ -39,7 +38,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 18px;
   padding: 8px 12px;
   transition: color 0.3s;
@@ -64,15 +63,7 @@ nav {
   margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
 /* heroo */
-
 
 .hero {
   width: 100%;
@@ -80,6 +71,7 @@ nav {
   background-color: transparent;
   padding-top: 100px;
   margin-bottom: 100px;
+  background: #d5ebeb;
 }
 
 .content {
@@ -90,25 +82,24 @@ nav {
 }
 
 .content h2 {
-    font-family: 'Sacramento', cursive;
-  background: -webkit-linear-gradient(45deg, #66BFBF, #797575);
+  font-family: 'Sacramento', cursive;
+  background: -webkit-linear-gradient(45deg, #66bfbf, #797575);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 20px;
   font-size: 4rem;
 }
 
-
 .content .location {
   padding: 15px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   color: #666666;
 }
 
 .content .location i {
-  background: -webkit-linear-gradient(45deg, #66BFBF, #000000);
+  background: -webkit-linear-gradient(45deg, #66bfbf, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0px 10px;
@@ -121,29 +112,26 @@ nav {
   color: #248686;
 }
 
-.more{
-   color: #1b346f ;
-
+.more {
+  color: #1b346f;
 }
 
-.more:hover{
- color: #76b9b9 ;
-  text-decoration:underline;
+.more:hover {
+  color: #76b9b9;
+  text-decoration: underline;
 }
 
-.btns{
+.btns {
   text-align: center;
   padding-top: 30px;
-
-
-
+  background: #d5ebeb;
 }
 
-.btn-fa{
+.btn-fa {
   margin-right: 30px;
 }
-.btns a{
-  background: -webkit-linear-gradient(45deg, #66BFBF, #a9a9a9);
+.btns a {
+  background: -webkit-linear-gradient(45deg, #66bfbf, #a9a9a9);
   border: none;
   border-radius: 5px;
   color: white;
@@ -153,15 +141,106 @@ nav {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  
-
-
 }
 
-.btns a:hover{
-background: -webkit-linear-gradient(45deg, #66bfbfe4, #a9a9a9df);
+.btns a:hover {
+  background: -webkit-linear-gradient(45deg, #66bfbfe4, #a9a9a9df);
 }
 
+/* ///about */
+.aboutH2 {
+  text-align: center;
+  padding-bottom: 80px;
+  font-size: 1.5rem;
+  color: #666666;
+  font-weight: bold;
+  font-family: 'Sacramento';
+}
+.about {
+  display: flex;
+  /* align-items: center;  */
+  max-width: 900px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+/* Original image container (desktop/tablet) */
+.aboutF {
+  flex-shrink: 0;
+}
+
+.aboutImg {
+  /* Keep desktop sizing here */
+  width: 300px;
+  min-width: 250px; /* This is the one we override on mobile */
+}
+
+.aboutImg img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 8px;
+}
+
+.aboutS {
+  flex-grow: 1;
+}
+
+.aboutS h2 {
+  padding-top: 0;
+  margin-bottom: 15px;
+}
+
+/* connect btns  */
+
+.connect h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #666666;
+  font-weight: bold;
+  font-family: 'Sacramento';
+  font-size: 2rem;
+}
+
+.connBtn a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.connBtn .connbtnOne {
+  background: -webkit-linear-gradient(45deg, #2d639d, #a9a9a9);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 18px;
+  text-align: center;
+}
+
+.connBtn .connbtnTwo {
+  background: -webkit-linear-gradient(45deg, #9d832d, #a9a9a9);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 18px;
+}
+
+.leranMoreBtn {
+  padding-top: 20px;
+}
+.leranMoreBtn a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(45deg, #66bfbf, #a9a9a9);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 18px;
+}
 
 /* Responsive Off-Canvas Menu */
 @media (max-width: 768px) {
@@ -169,7 +248,7 @@ background: -webkit-linear-gradient(45deg, #66bfbfe4, #a9a9a9df);
     display: block;
   }
 
-  nav{
+  nav {
     justify-content: space-between;
   }
 
@@ -184,7 +263,7 @@ background: -webkit-linear-gradient(45deg, #66bfbfe4, #a9a9a9df);
     padding: 20px;
     gap: 20px;
     transition: right 0.3s ease;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .nav-links.show {
@@ -199,4 +278,33 @@ background: -webkit-linear-gradient(45deg, #66bfbfe4, #a9a9a9df);
     font-size: 20px;
     padding: 10px 0;
   }
+
+  .about {
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 50px;
+    gap: 20px; /* Reduced gap when stacked vertically */
+  }
+
+  .aboutImg {
+    /* 💡 FIX 1: Overriding width to be 70% of the parent (.about) */
+    width: 70%;
+    /* 💡 FIX 2: Removing the constraining min-width from desktop view */
+    min-width: unset;
+    /* 💡 FIX 3: Set a definite maximum size to prevent excessive growth on tablets */
+    /* max-width: 900px;  */
+    margin: 0 auto 10px; /* Center and add less margin below the image */
+    width: 300px;
+  }
+
+  .aboutS h2 {
+    padding-top: 10px;
+  }
+}
+
+/* ==================================== */
+/* 📱 RESPONSIVENESS (Fixing Image Size) */
+/* ==================================== */
+
+@media (max-width: 768px) {
 }
