@@ -10,24 +10,23 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat&family=Sacramento&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&amp;\
+    900&amp;family=Ubuntu&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&amp;900&amp;family=Ubuntu&amp;display=swap"
-    rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
-  <title>about me</title>
+  <title>Reach Me</title>
 </head>
 
-<body style="background-color: #f5f5f5dd;">
+<body>
   <nav>
     <div class="logo">
       <a href="/">M</a>
     </div>
 
     <div class="hamburger"><i class="fa-solid fa-bars-staggered"></i></div>
-
     <div class="nav-links">
       <div class="close"><i class="fa-regular fa-circle-xmark"></i></div>
       <a href="index.html"><i class="fa-regular fa-house"></i> Home</a>
@@ -38,59 +37,30 @@
 
 
 
-
-  <div class="about-hero">
-    <img class="top-cloud" src="/img/cloud.png" alt="cloud-image">
-
-    <div class="about-hero-img-3 img-part" data-speed="-0.5" data-move="1">
-      <img class="about-hero-img" src="img/crop.png" alt="profile-image">
-    </div>
-
-    <img class="bottom-cloud" src="/img/cloud.png" alt="cloud-image">
-  </div>
-
-
-
-
-
-
-
-
-
-  <!-- about section  -->
-
-
-
-  <div class="about-content">
-    <h2>Hi again, I'm Mazharuddin.</h2>
-    <p>
-      I’m a Full stack Developer living in Bengaluru, passionate about how people and technology can work together to
-      make life better.
-      <br><br>
-      I have hands-on experience in both frontend and backend development from crafting clean, responsive interfaces
-      with HTML, CSS, and JavaScript to building scalable APIs and managing databases.
-      <br><br>
-      I focus on writing clean, maintainable code and continuously learning new tools to stay industry ready.
-      <br><br>
-      Outside of coding, I enjoy gaming and playing cricket they help me stay creative and refreshed.
-      <br><br>
-      If you’d like to connect, feel free to <a class="reachOut" href="contact.html">reach out</a>.
-    </p>
+  <div class="formTopHeadings">
+    <h2>Contact Me</h2>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
 
   </div>
 
+  <div class="contact-container">
 
+    <form class="contact-form" id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="phone">Phone</label>
+      <input type="number" id="phone" name="phone" placeholder="Phone" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="How Can I Help You" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </div>
-  </section>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -108,6 +78,11 @@
 
     </div>
   </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <script src="app.js"></script>
 </body>

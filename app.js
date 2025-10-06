@@ -14,27 +14,54 @@ closeBtn.addEventListener('click', () => {
 
 
 
-  //  <div class="top">
-  //       <img class="top-cloud"
-  //           src="/img/cloud.png"
-  //           alt="cloud-image">
-          
-  //               <div class="about-hero">
-  //        <!-- <div class="about-hero-img-1 img-part" data-speed="-0.5" data-move="1">
-  //           <img class="about-hero-img" src="/img/about-3.jpg" alt="">
-  //       </div> -->
-  //       <!-- <div class="about-hero-img-2 img-part" data-speed="-1" data-move="1">
-  //           <img class="about-hero-img" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/346/cloud_2601-fe0f.png" alt="">
-  //       </div>  -->
-     
-  //       <div class="about-hero-img-3 img-part" data-speed="-0.5" data-move="1">
-  //           <img class="about-hero-img" src="img/crop.png" alt="">
-  //       </div>
-  //   </div>
-       
-  //       <img class="bottom-cloud"
-  //           src="/img/cloud.png"
-  //           alt="cloude-image">
-      
-        
-  //   </div>
+
+
+  // (function(){
+  //   emailjs.init("T_BfHMu9RScB306oE"); // Replace with your EmailJS User ID
+  // })();
+
+  // const form = document.getElementById('contactForm');
+  // form.addEventListener('submit', function(e){
+  //   e.preventDefault(); // prevent page reload
+
+  //   emailjs.sendForm('service_r61srq7', 'template_676hlx8', this)
+  //     .then(() => {
+  //       alert('Message sent successfully!');
+  //       form.reset();
+  //     }, (err) => {
+  //       alert('Oops! Something went wrong: ' + JSON.stringify(err));
+  //     });
+  // });
+
+
+  
+  (function(){
+    emailjs.init("T_BfHMu9RScB306oE"); // Your EmailJS User ID
+  })();
+
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    emailjs.sendForm('service_r61srq7', 'template_676hlx8', this)
+      .then(() => {
+        Swal.fire({
+          title: 'Message Sent!',
+          text: 'Thank you for contacting me. I’ll get back to you soon.',
+          icon: 'success',
+          confirmButtonText: 'Okay',
+          confirmButtonColor: '#66BFBF'
+        });
+        form.reset();
+      }, (err) => {
+        Swal.fire({
+          title: 'Oops!',
+          text: 'Something went wrong. Please try again later.',
+          icon: 'error',
+          confirmButtonText: 'Close',
+          confirmButtonColor: '#ff4d4d'
+        });
+      });
+  });
+
